@@ -1,11 +1,11 @@
-package Home;
+package Desktop.MainStructure;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 
-public class HomeController {
+public class MainStructure {
 
     @FXML
     private BorderPane home_page;

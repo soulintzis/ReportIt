@@ -1,4 +1,4 @@
-package Login;
+package Desktop.Login;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Login");
+        stage.setTitle("Desktop/Login");
         stage.show();
     }
 
