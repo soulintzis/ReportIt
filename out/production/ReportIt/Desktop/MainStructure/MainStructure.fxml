@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" stylesheets="@../stylish/style.css" xmlns="http://javafx.com/javafx/8.0.171"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="Desktop.MainStructure.MainStructure">
+   <BorderPane fx:id="home_page" prefHeight="1060.0" prefWidth="1920.0">
+      <top>
+         <Pane prefHeight="88.0" prefWidth="1920.0" style="-fx-background-color: #1D4F68;"
+               BorderPane.alignment="CENTER">
+            <Label alignment="TOP_CENTER" layoutX="989.0" layoutY="3.0" prefHeight="38.0" prefWidth="120.0"
+                   style="-fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;"
+                   text="ReportIt" textFill="WHITE">
+               <font>
+                  <Font name="Sitka" size="28.0"/>
+               </font>
+            </Label>
+            <Line endX="179.13" endY="2.52587890625E-5" fill="WHITE" layoutX="959.0" layoutY="39.0" stroke="WHITE"
+                  strokeLineCap="ROUND" strokeLineJoin="ROUND"/>
+            <Label alignment="CENTER" layoutX="968.0" layoutY="39.0"
+                   style="fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;"
+                   text="For city's remedy" textFill="WHITE">
+               <font>
+                  <Font size="22.0"/>
+               </font>
+            </Label>
+         </Pane>
+      </top>
+      <left>
+         <Pane prefHeight="972.0" prefWidth="237.0" style="-fx-background-color: #1D4F68;"
+               BorderPane.alignment="CENTER">
+            <Line endX="-200.0" layoutX="200.0" startX="-3.0517578125E-5" stroke="#4f5467"/>
+            <Line endX="100.0" layoutX="99.0" layoutY="45.0" startX="-100.0" stroke="#4f5467"/>
+            <Label layoutX="10.0" layoutY="16.0" text="Username:" textFill="#f8f8f8">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0"/>
+               </font>
+            </Label>
+            <Label fx:id="username_label" layoutX="115.0" layoutY="15.0" text="username" textFill="#f2f2f2">
+               <font>
+                  <Font name="Segoe UI Semibold" size="17.0"/>
+               </font>
+            </Label>
+            <Button fx:id="problem_btn" layoutX="17.0" layoutY="62.0" mnemonicParsing="false"
+                    style="-fx-background-color: none;" text="Προβλήματα" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND"/>
+               </cursor>
+            </Button>
+            <Button fx:id="map_btn" layoutX="17.0" layoutY="106.0" mnemonicParsing="false"
+                    style="-fx-background-color: none;" text="Χάρτης Προβλημάτων" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND"/>
+               </cursor>
+            </Button>
+            <Button fx:id="profile_btn" layoutX="17.0" layoutY="152.0" mnemonicParsing="false"
+                    style="-fx-background-color: none;" text="Προφίλ" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND"/>
+               </cursor>
+            </Button>
+            <Button fx:id="add_emp_btn" layoutX="17.0" layoutY="196.0" mnemonicParsing="false"
+                    style="-fx-background-color: none;" text="Προσθήκη Υπαλλήλου" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND"/>
+               </cursor>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="35.0" layoutY="936.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <Image url="@../images/logout-red.png"/>
+            </ImageView>
+            <Button fx:id="logout_btn" layoutX="55.0" layoutY="928.0" mnemonicParsing="false"
+                    style="-fx-background-color: none;" text="Αποσύνσεση" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0"/>
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND"/>
+               </cursor>
+            </Button>
+         </Pane>
+      </left>
+   </BorderPane>
+</GridPane>
