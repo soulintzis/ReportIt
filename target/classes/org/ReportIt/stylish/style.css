@@ -1,0 +1,20 @@
+.login-fields {
+    -fx-text-box-border: #169BE1 ;
+    -fx-background-radius: 23px;
+    -fx-border-width: 2px;
+    -fx-padding: 10;
+    -fx-spacing: 8;
+}
+
+.login-btn{
+    -fx-background-radius: 23px;
+    -fx-text-box-border: black ;
+    -fx-border-width: 50px;
+    -fx-background-color: #3A9DCF;
+
+}
+
+.login-btn:pressed{
+    -fx-background-color: #297094;
+    -fx-background-radius: 22;
+}
