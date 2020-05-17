@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.LoginController">
    <top>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1922.0" style="-fx-background-color: #1D4F68;" BorderPane.alignment="CENTER">
          <children>
@@ -61,7 +61,7 @@
                   <Insets />
                </VBox.margin>
             </VBox>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="400.0" styleClass="login-btn" stylesheets="@../stylish/style.css" text="Login" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="login_btn" alignment="CENTER" mnemonicParsing="false" onAction="#onLogin" prefHeight="36.0" prefWidth="400.0" styleClass="login-btn" stylesheets="@../stylish/style.css" text="Login" textAlignment="CENTER" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
