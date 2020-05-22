@@ -1,4 +1,4 @@
-org\ReportIt\PrimaryController.class
 org\ReportIt\App.class
-org\ReportIt\SecondaryController.class
+org\ReportIt\Controllers\LoginController.class
+org\ReportIt\Controllers\SignupContoller.class
 module-info.class

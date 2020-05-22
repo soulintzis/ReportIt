@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="850.0" maxWidth="425.0" minHeight="850.0" minWidth="320.0" prefHeight="850.0" prefWidth="461.0" stylesheets="@../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.LoginController">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="850.0" maxWidth="425.0" minHeight="850.0" minWidth="320.0" prefHeight="850.0" prefWidth="425.0" stylesheets="@../stylish/style.css">
+         <content>
+            <HBox alignment="CENTER" prefHeight="977.0" prefWidth="1918.0">
+               <children>
+                  <VBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="335.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true" x="64.0" y="32.0">
+                           <image>
+                              <Image url="@../images/logo_transparent.png" />
+                           </image>
+                        </ImageView>
+                        <VBox spacing="10.0" stylesheets="@../stylish/style.css">
+                           <children>
+                              <TextField prefHeight="48.0" prefWidth="268.0" promptText="E-mail" styleClass="input-field" stylesheets="@../stylish/style.css">
+                                 <font>
+                                    <Font name="Segoe UI" size="22.0" />
+                                 </font>
+                              </TextField>
+                              <PasswordField prefHeight="30.0" prefWidth="91.0" promptText="Password" styleClass="input-field" stylesheets="@../stylish/style.css">
+                                 <font>
+                                    <Font name="Segoe UI" size="22.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </VBox>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="39.0" prefWidth="199.0" styleClass="submit-btn" stylesheets="@../stylish/style.css" text="Login" textAlignment="CENTER" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Hyperlink text="Login as a Guest" underline="true" />
+                        <Hyperlink prefHeight="48.0" prefWidth="155.0" stylesheets="@../stylish/style.css" text="You don't have an account? Let's create one!" textOverrun="CENTER_ELLIPSIS" underline="true" wrapText="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
