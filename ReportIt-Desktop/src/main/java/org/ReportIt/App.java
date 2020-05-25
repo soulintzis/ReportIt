@@ -35,5 +35,5 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
+    Employee emp = new Employee("address",  "phone",  "telephone",  "department",  "role",  "firstName",  "lastName"
 }
