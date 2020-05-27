@@ -1,4 +1,4 @@
-package org.ReportIt.Controllers;
+package org.ReportIt.Controllers.Desktop;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

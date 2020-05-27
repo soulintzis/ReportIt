@@ -18,3 +18,10 @@
     -fx-background-color: #297094;
     -fx-background-radius: 22;
 }
+
+.prelogin-btn {
+    -fx-background-radius: 23px;
+    -fx-text-box-border: black ;
+    -fx-border-width: 50px;
+    -fx-background-color: #1D4F68;
+}

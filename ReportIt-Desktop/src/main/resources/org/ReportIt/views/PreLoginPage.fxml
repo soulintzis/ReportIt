@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.Desktop.PreLoginPageController">
+   <children>
+      <ImageView fitHeight="228.0" fitWidth="315.0" layoutX="99.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo_transparent.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="10.0" layoutY="375.0" prefWidth="407.0" spacing="25.0">
+         <children>
+            <Button fx:id="con_cit_btn" mnemonicParsing="false" onAction="#citizen_app" prefHeight="40.0" prefWidth="414.0" styleClass="prelogin-btn" stylesheets="@../stylish/style.css" text="Continue as Citizen" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font></Button>
+            <Button fx:id="con_emp_btn" mnemonicParsing="false" onAction="#employee_app" prefHeight="40.0" prefWidth="439.0" styleClass="prelogin-btn" stylesheets="@../stylish/style.css" text="Continue as Employee" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font></Button>
+            <Button fx:id="guest_btn" mnemonicParsing="false" onAction="#citizen_app_without_login" prefHeight="40.0" prefWidth="461.0" styleClass="prelogin-btn" stylesheets="@../stylish/style.css" text="Continue as Guest" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="19.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
