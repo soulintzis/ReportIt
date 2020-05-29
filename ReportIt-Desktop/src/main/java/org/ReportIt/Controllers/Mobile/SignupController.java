@@ -1,4 +1,4 @@
 package org.ReportIt.Controllers.Mobile;
 
-public class SignupContoller {
+public class SignupController {
 }
