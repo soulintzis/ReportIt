@@ -1,4 +1,4 @@
-.login-fields {
+.input-field {
     -fx-text-box-border: #169BE1 ;
     -fx-background-radius: 23px;
     -fx-border-width: 2px;
@@ -6,16 +6,17 @@
     -fx-spacing: 8;
 }
 
-.login-btn{
+.submit-btn {
     -fx-background-radius: 23px;
     -fx-text-box-border: black ;
     -fx-border-width: 50px;
-    -fx-background-color: #3A9DCF;
+    /* -fx-background-color: #3A9DCF; */
+    -fx-background-color: linear-gradient(to right, #3A9DCF, #1F5570);
 
 }
 
-.login-btn:pressed{
-    -fx-background-color: #297094;
+.submit-btn:pressed {
+    -fx-background-color: #1F5570;
     -fx-background-radius: 22;
 }
 
@@ -24,4 +25,11 @@
     -fx-text-box-border: black ;
     -fx-border-width: 50px;
     -fx-background-color: #1D4F68;
+}
+
+.sign-up-link{
+    -fx-background-color: none;
+    -fx-font-size: 14px!important;
+    -fx-text-alignment: center!important;
+
 }

@@ -19,8 +19,8 @@ public class Employee {
         this.role = role;
         this.firstName = firstName;
         this.lastName = lastName;
-        GeneratePassword pass=new GeneratePassword();
-        this.password=pass.generateRandomPassword();
+//        GeneratePassword pass=new GeneratePassword();
+//        this.password=pass.generateRandomPassword();
         printInfoEmployee();
     }
 
