@@ -2,6 +2,7 @@ module org.ReportIt {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
+    requires com.jfoenix;
 
     opens org.ReportIt to javafx.fxml;
     opens org.ReportIt.Controllers.Mobile to javafx.fxml;
