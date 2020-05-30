@@ -61,3 +61,10 @@
     -fx-font-size: 22px;
     -fx-text-alignment: center;
 }
+
+.change-pass-btn{
+    -fx-text-box-border: black;
+    -fx-background-color: #DC143C;
+    -fx-background-radius: 23px;
+    -fx-text-fill: white;
+}
