@@ -1,4 +1,4 @@
-package org.ReportIt.Controllers.Desktop;
+package org.ReportIt.Controllers.Mobile;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,7 +24,7 @@ public class PreLoginPageController {
 
     @FXML
     void citizen_app_without_login(ActionEvent event) {
-        changeViewMobile(event, getClass(), "Home");
+        changeViewMobile(event, getClass(), "Menu");
     }
 
     @FXML
