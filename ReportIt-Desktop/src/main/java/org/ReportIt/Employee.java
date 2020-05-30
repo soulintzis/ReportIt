@@ -1,7 +1,12 @@
 package org.ReportIt;
 
 
+import static org.ReportIt.GeneratePassword.generateRandomPassword;
+
 public class Employee {
+    private static int counter;
+
+
     private String password;
     private  String phone;
     private String address;
@@ -11,7 +16,7 @@ public class Employee {
     private String firstName;
     private String lastName;
 
-    public Employee(String address, String phone, String telephone, String department, String role, String firstName, String lastName) {
+    public Employee(String password, String address, String phone, String telephone, String department, String role, String firstName, String lastName) {
         this.address = address;
         this.phone = phone;
         this.telephone = telephone;
@@ -20,9 +25,12 @@ public class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
 //        GeneratePassword pass=new GeneratePassword();
-//        this.password=pass.generateRandomPassword();
+        this.password=generateRandomPassword();
         printInfoEmployee();
     }
+
+//    public static void add(Employee employee) {
+//    }
 
     public String getPassword() {
         return password;
@@ -106,5 +114,8 @@ public class Employee {
         System.out.println("FirstName: " + this.firstName);
         System.out.println("LastName:" + this.lastName);
         System.out.println("Password:" + this.password);
+    }
+    public static int getNumOfInstances() {
+        return counter;
     }
 }

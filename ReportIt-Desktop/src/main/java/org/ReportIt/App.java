@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("views/Login"));
+        scene = new Scene(loadFXML("views/PreLoginPage"));
         stage.setScene(scene);
         stage.show();
     }
@@ -34,6 +34,9 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+//        Problem pm1 = new Problem("Swmerset 103", "streetLight", "Medium", "Just another problem");
+//        pm1.printObj();
     }
-    Employee emp = new Employee("address",  "phone",  "telephone",  "department",  "role",  "firstName",  "lastName");
+
+
 }

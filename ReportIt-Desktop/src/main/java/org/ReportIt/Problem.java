@@ -15,7 +15,7 @@ public class Problem {
     private LocalDateTime time_date;
     private String status;
 
-    public Problem(String loc, String type, String danger, String des){
+    public Problem(String password, String phone, String telephone, String address, String loc, String type, String danger, String des){
         location = loc;
         this.type = type;
         dangerDegree = danger;

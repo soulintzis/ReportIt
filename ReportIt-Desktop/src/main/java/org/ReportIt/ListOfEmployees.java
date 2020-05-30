@@ -2,18 +2,31 @@ package org.ReportIt;
 
 import java.util.ArrayList;
 
-public class ListOfEmployees extends Employee {
-
-
-    public ListOfEmployees(String address, String phone, String telephone, String department, String role, String firstName, String lastName) {
-        super(address, phone, telephone, department, role, firstName, lastName);
+public class ListOfEmployees {
+    static ArrayList<Employee> employee = new ArrayList<Employee>();
+    public static void addEmployee(String password, String phone, String address, String telephone,String department,String role,String firstName,String lastName){
+        employee.add(new Employee(password,phone , telephone, address,department,role,firstName,lastName));
+        System.out.println("Employee added !!!");
     }
 
-    public static void main(String[] args) {
-        ArrayList<Employee> citizens = new ArrayList<Employee>();
-        for(int i=0; i<=getNumOfInstances(); i++) {
-            Employee.add(Employee_e);
-            System.out.println(citizens);
-        }
+    static boolean isUnique() {
+
+        return false;
     }
+
+//        public static Employee printProblems(){
+//            for(Employee str: employee){
+////                System.out.println(str.getLocation());
+//                Employee  = str;
+//                return pro;
+//            }
+//            return null;
+//        }
+
+    static boolean checkIfMatch(){
+
+        return false;
+    }
+
+
 }
