@@ -2,8 +2,10 @@
 
 <?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -34,7 +36,7 @@
                   </VBox>
                </children>
             </HBox>
-            <Text smooth="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Προφίλ" textAlignment="CENTER" wrappingWidth="569.4794921875" y="200.0">
+            <Text smooth="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Προσθήκη Νέου Υπαλλήλου" textAlignment="CENTER" wrappingWidth="569.4794921875" y="200.0">
                <font>
                   <Font name="Arial Bold" size="30.0" />
                </font>
@@ -46,10 +48,10 @@
          </children>
       </VBox>
    </top>
-   <right>
-      <VBox alignment="CENTER" fillWidth="false" prefHeight="772.0" prefWidth="1920.0" spacing="50.0" stylesheets="@../../stylish/style.css" BorderPane.alignment="CENTER">
+   <center>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="772.0" prefWidth="1920.0" spacing="50.0" stylesheets="@../stylish/style.css" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="144.0" prefWidth="1920.0">
+            <HBox prefHeight="112.0" prefWidth="1920.0">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
@@ -79,102 +81,68 @@
                <children>
                   <VBox alignment="CENTER_RIGHT" prefHeight="176.0" prefWidth="300.0" spacing="20.0">
                      <children>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Ονοματεπώνυμο:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Ονοματεπώνυμο">
                            <font>
                               <Font name="Arial Bold" size="22.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Email:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Email">
                            <font>
                               <Font name="Arial" size="22.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Τηλέφωνο:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Όνομα Χρήστη">
                            <font>
                               <Font name="Arial" size="22.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Τμήμα:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Τμήμα">
                            <font>
                               <Font name="Arial" size="22.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Ρόλος:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Ρόλος">
                            <font>
                               <Font name="Arial" size="22.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Διεύθυνση Κατοικίας:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Διεύθυνση Κατοικίας">
                            <font>
                               <Font name="Arial" size="22.0" />
                            </font>
                         </Label>
-                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Υπάλληλος απο:">
+                        <Label prefHeight="50.0" prefWidth="420.0" styleClass="label-text" text="Τηλέφωνο">
                            <font>
                               <Font name="Arial" size="22.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
-                  <VBox prefHeight="42.0" prefWidth="464.0" spacing="30.0">
+                  <VBox prefHeight="42.0" prefWidth="464.0" spacing="20.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.13671875">
-                           <font>
-                              <Font name="System Bold" size="22.0" />
-                           </font>
-                        </Text>
+                        <TextField prefHeight="42.0" prefWidth="400.0" styleClass="input-field" />
+                        <TextField prefHeight="10.0" prefWidth="464.0" styleClass="input-field" />
+                        <TextField prefHeight="10.0" prefWidth="464.0" styleClass="input-field" />
+                        <TextField prefHeight="10.0" prefWidth="464.0" styleClass="input-field" />
+                        <TextField prefHeight="10.0" prefWidth="464.0" styleClass="input-field" />
+                        <TextField prefHeight="10.0" prefWidth="464.0" styleClass="input-field" />
+                        <TextField prefHeight="10.0" prefWidth="464.0" styleClass="input-field" />
                      </children>
                   </VBox>
                </children>
             </HBox>
-         </children>
-         <BorderPane.margin>
-            <Insets top="-150.0" />
-         </BorderPane.margin>
-      </VBox>
-   </right>
-   <bottom>
-      <VBox prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" styleClass="change-pass-btn" stylesheets="@../../stylish/style.css" text="Αλλαγή Κωδικού Πρόσβασης" textAlignment="CENTER">
+            <Button fx:id="login_btn" alignment="CENTER" mnemonicParsing="false" onAction="#onLogin" prefHeight="50.0" prefWidth="380.0" styleClass="submit-btn" stylesheets="@../stylish/style.css" text="Υποβολή" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                <font>
-                  <Font size="15.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
          </children>
-         <padding>
-            <Insets left="1600.0" />
-         </padding>
+         <BorderPane.margin>
+            <Insets top="-200.0" />
+         </BorderPane.margin>
       </VBox>
-   </bottom>
+   </center>
 </BorderPane>
