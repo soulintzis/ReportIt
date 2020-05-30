@@ -20,6 +20,9 @@ import java.util.ResourceBundle;
 public class MenuController implements Initializable {
 //    @FXML
 //    private BorderPane main_window;
+    @FXML
+    private Pane pane;
+
 
     @FXML
     private JFXHamburger menu_btn;
@@ -31,6 +34,8 @@ public class MenuController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
             VBox vbox = FXMLLoader.load(getClass().getResource("/org/ReportIt/views/Mobile/Sidepanel.fxml"));
+            loadFxml("Home");
+
             drawer.setSidePane(vbox);
             Button previous_btn_pressed;
             VBox buttons_vbox = (VBox) vbox.getChildren().get(1);
@@ -41,17 +46,16 @@ public class MenuController implements Initializable {
                         if (node.getAccessibleText() != null) {
                             switch (node.getAccessibleText()) {
                                 case "home":
-                                    System.out.println("sa");
+                                    loadFxml("Home");
                                     break;
                                 case "add":
-
-                                    System.out.println("sa");
+                                    //TODO: Add "Add Problem" page
                                     break;
                                 case "map":
-                                    System.out.println("Hello");
+                                    loadFxml("MapView");
                                     break;
                                 case "profile":
-                                    System.out.println("sa");
+                                    //TODO: Add "Profile" page
                                     break;
                             }
                         }
@@ -81,8 +85,11 @@ public class MenuController implements Initializable {
 
                 if (drawer.isOpened()) {
                     drawer.close();
+                    drawer.setDisable(true);
                 } else {
                     drawer.open();
+                    drawer.setVisible(true);
+                    drawer.setDisable(false);
                 }
             });
         } catch (IOException ex) {
@@ -91,14 +98,14 @@ public class MenuController implements Initializable {
 
     }
 
-//    private void loadScene(String scene) {
-//        Parent root = null;
-//
-//        try {
-//            root = FXMLLoader.load(getClass().getResource("/org/ReportIt/views/Mobile/" + scene + ".fxml"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        main_window.setCenter(root);
-//    }
+    public void loadFxml (String scene) {
+        Pane newLoadedPane = null;
+        pane.getChildren().clear();
+        try {
+            newLoadedPane = FXMLLoader.load(getClass().getResource("/org/ReportIt/views/Mobile/" + scene + ".fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        pane.getChildren().add(newLoadedPane);
+    }
 }

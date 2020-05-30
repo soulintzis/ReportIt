@@ -8,13 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            stylesheets="@../../stylish/style.css"
-            fx:controller="org.ReportIt.Controllers.Mobile.MenuController"
-            prefHeight="750.0" prefWidth="425.0">
 
-    <Pane prefHeight="75.0" prefWidth="425.0" style="-fx-background-color: #1D4F68;">
+
+<AnchorPane prefHeight="750.0" prefWidth="425.0" stylesheets="@../../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.Mobile.MenuController">
+
+             <Pane prefHeight="75.0" prefWidth="425.0" style="-fx-background-color: #1D4F68;">
         <children>
             <JFXHamburger fx:id="menu_btn" layoutX="361.0" layoutY="20.0" prefHeight="35.0" prefWidth="64.0" styleClass="jfx-hamburger" />
             <VBox alignment="CENTER" layoutY="-1.0" prefHeight="75.0" prefWidth="174.0">
@@ -30,8 +28,12 @@
                             <Font size="18.0" />
                         </font>
                     </Label>
-                </children></VBox>
-        </children></Pane>
-    <JFXDrawer fx:id="drawer" defaultDrawerSize="225.0" direction="RIGHT" layoutX="200.0" layoutY="73.0" prefHeight="677.0" prefWidth="225.0" />
+                </children>
+         </VBox>
+        </children>
+   </Pane>
+   <Pane fx:id="pane" layoutY="73.0" prefHeight="677.0" prefWidth="425.0" />
+    <JFXDrawer fx:id="drawer" defaultDrawerSize="225.0" direction="RIGHT" layoutX="200.0" layoutY="73.0" prefHeight="677.0" prefWidth="225.0" viewOrder="-1.0" />
+<!--   <Pane fx:id="pane" layoutY="73.0" prefHeight="677.0" prefWidth="425.0" />-->
 
-</AnchorPane>
+      </AnchorPane>
