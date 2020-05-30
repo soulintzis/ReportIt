@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.Desktop.LoginController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1922.0" style="-fx-background-color: #1D4F68;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="120.0" style="-fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;" text="ReportIt" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Sitka" size="28.0" />
+                     </font>
+                  </Label>
+                  <Line endX="179.13" endY="2.52587890625E-5" fill="WHITE" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+                  <Label alignment="CENTER" style="fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;" text="For city's remedy" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" fillWidth="false" minHeight="720.0" minWidth="1080.0" prefHeight="1960.0" prefWidth="1920.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="358.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo_transparent.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="110.0" prefWidth="526.0" spacing="10.0">
+               <children>
+                  <TextField prefHeight="48.0" prefWidth="1721.0" promptText="Email" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                     <font>
+                        <Font name="Segoe UI" size="22.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField prefHeight="10.0" prefWidth="464.0" promptText="Κωδικός Πρόσβασης" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                     <font>
+                        <Font name="Segoe UI" size="22.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="login_btn" alignment="CENTER" mnemonicParsing="false" onAction="#onLogin" prefHeight="36.0" prefWidth="380.0" styleClass="submit-btn" stylesheets="@../../stylish/style.css" text="Σύνδεση" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="-200.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

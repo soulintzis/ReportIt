@@ -1,8 +1,6 @@
 package org.ReportIt;
 
 
-import static org.ReportIt.GeneratePassword.generateRandomPassword;
-
 public class Employee {
     private String password;
     private  String phone;
@@ -21,7 +19,8 @@ public class Employee {
         this.role = role;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.password= generateRandomPassword();
+//        GeneratePassword pass=new GeneratePassword();
+//        this.password=pass.generateRandomPassword();
         printInfoEmployee();
     }
 
@@ -108,5 +107,4 @@ public class Employee {
         System.out.println("LastName:" + this.lastName);
         System.out.println("Password:" + this.password);
     }
-
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="425.0" stylesheets="@../../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.Mobile.MenuController">
+
+             <Pane prefHeight="75.0" prefWidth="425.0" style="-fx-background-color: #1D4F68;">
+        <children>
+            <JFXHamburger fx:id="menu_btn" layoutX="361.0" layoutY="20.0" prefHeight="35.0" prefWidth="64.0" styleClass="jfx-hamburger" />
+            <VBox alignment="CENTER" layoutY="-1.0" prefHeight="75.0" prefWidth="174.0">
+                <children>
+                    <Label alignment="TOP_CENTER" prefHeight="31.0" prefWidth="174.0" style="-fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;" text="ReportIt" textFill="WHITE">
+                        <font>
+                            <Font size="24.0" />
+                        </font>
+                    </Label>
+                    <Line endX="154.13" endY="2.5258789062121423E-5" fill="WHITE" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+                    <Label alignment="CENTER" prefHeight="9.0" prefWidth="174.0" style="fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;" text="For city's remedy" textFill="WHITE">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                </children>
+         </VBox>
+        </children>
+   </Pane>
+   <Pane fx:id="pane" layoutY="73.0" prefHeight="677.0" prefWidth="425.0" />
+    <JFXDrawer fx:id="drawer" defaultDrawerSize="225.0" direction="RIGHT" layoutX="200.0" layoutY="73.0" prefHeight="677.0" prefWidth="225.0" viewOrder="-1.0" />
+<!--   <Pane fx:id="pane" layoutY="73.0" prefHeight="677.0" prefWidth="425.0" />-->
+
+      </AnchorPane>
