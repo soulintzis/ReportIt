@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 
 public class Citizen /*extends Problem*/{
-    private static int counter;
+    private static int counter=0;
 
     private String firstName;
     private String lastName;
@@ -13,15 +13,14 @@ public class Citizen /*extends Problem*/{
     private String username;
 
     //Citizen Constructor
-    public Citizen(String firstName,String lastName,String email, String username,String password){
+    public Citizen(String firstName,String lastName,String email, String username,String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.username = username;
         this.password = password;
         printInfoCitizen();
-
-        counter++;
+        getNumOfInstances();
     }
 
     public String getFirstName() {
@@ -99,8 +98,11 @@ public class Citizen /*extends Problem*/{
     }
 
     public static int getNumOfInstances() {
+        counter++;
         return counter;
     }
+
+    private boolean checkOldPassword(String password)
 
     public void printInfoCitizen(){
         System.out.println("Firstname: " +this.firstName);

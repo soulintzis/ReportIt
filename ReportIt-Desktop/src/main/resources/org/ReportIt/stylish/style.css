@@ -68,3 +68,16 @@
     -fx-background-radius: 23px;
     -fx-text-fill: white;
 }
+
+.change-pass-btn:pressed{
+    -fx-background-color: #B01030;
+    -fx-background-radius: 22;
+}
+
+.dropdown-field{
+    -fx-text-box-border: white;
+    -fx-background-radius: 23px;
+    /*-fx-border-width: 2px;*/
+    -fx-padding: 10;
+    -fx-spacing: 8;
+}
