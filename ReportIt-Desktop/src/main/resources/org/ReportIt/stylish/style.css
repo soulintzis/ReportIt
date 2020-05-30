@@ -48,5 +48,16 @@
     -fx-background-color: none;
     -fx-font-size: 14px!important;
     -fx-text-alignment: center!important;
+}
 
+.label-text {
+    -fx-font-size: 22px !important;
+    -fx-text-alignment: center;
+
+}
+
+.username-label{
+    -fx-font-style: italic;
+    -fx-font-size: 22px;
+    -fx-text-alignment: center;
 }

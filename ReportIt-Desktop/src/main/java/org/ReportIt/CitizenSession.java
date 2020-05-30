@@ -1,4 +1,4 @@
-package org.ReportIt.utils;
+package org.ReportIt;
 
 public class CitizenSession {
 }

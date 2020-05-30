@@ -1,4 +1,4 @@
-package org.ReportIt.utils;
+package org.ReportIt;
 import java.util.ArrayList;
 
 public class ListOfCitizens extends Citizen {

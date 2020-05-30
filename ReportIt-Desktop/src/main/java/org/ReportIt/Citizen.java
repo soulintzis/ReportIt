@@ -1,4 +1,4 @@
-package org.ReportIt.utils;
+package org.ReportIt;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
