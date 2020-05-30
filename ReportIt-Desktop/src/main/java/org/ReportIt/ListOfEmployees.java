@@ -1,32 +1,21 @@
 package org.ReportIt;
-
 import java.util.ArrayList;
 
-public class ListOfEmployees {
-    static ArrayList<Employee> employee = new ArrayList<Employee>();
-    public static void addEmployee(String password, String phone, String address, String telephone,String department,String role,String firstName,String lastName){
-        employee.add(new Employee(password,phone , telephone, address,department,role,firstName,lastName));
-        System.out.println("Employee added !!!");
+public class ListOfEmployees{
+    static ArrayList<Employee> employees = new ArrayList<Employee>();
+
+    public static Employee addEmployee(String password, String address, String phone, String telephone, String department, String role, String firstName, String lastName){
+        employees.add(new Employee(password, address, phone, telephone, department, role, firstName, lastName));
+        System.out.println("Employee added successfully");
+        int last_item_pos = employees.size() - 1;
+        Employee Employee = employees.get(last_item_pos);
+        return Employee;
     }
 
-    static boolean isUnique() {
-
-        return false;
+    public static void printCitizens(){
+        for(Employee str: employees){
+            str.printInfoEmployee();
+        }
     }
-
-//        public static Employee printProblems(){
-//            for(Employee str: employee){
-////                System.out.println(str.getLocation());
-//                Employee  = str;
-//                return pro;
-//            }
-//            return null;
-//        }
-
-    static boolean checkIfMatch(){
-
-        return false;
-    }
-
 
 }
