@@ -15,36 +15,36 @@
    <center>
       <VBox alignment="CENTER" fillWidth="false" spacing="20.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="233.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="245.0" fitWidth="258.0" pickOnBounds="true">
                <image>
                   <Image url="@../../images/logo_transparent.png" />
                </image>
             </ImageView>
-            <VBox prefHeight="200.0" prefWidth="326.0" spacing="20.0">
+            <VBox prefHeight="321.0" prefWidth="337.0" spacing="20.0">
                <children>
-                  <TextField prefHeight="48.0" prefWidth="267.0" promptText="Full name" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                  <TextField prefHeight="48.0" prefWidth="267.0" promptText="Email" styleClass="input-field" stylesheets="@../../stylish/style.css">
                      <font>
-                        <Font name="Segoe UI" size="22.0" />
+                        <Font name="Segoe UI" size="20.0" />
                      </font>
                   </TextField>
-                  <TextField prefHeight="48.0" prefWidth="267.0" promptText="Username" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                  <TextField prefHeight="48.0" prefWidth="267.0" promptText="Ονοματεπώνυμο" styleClass="input-field" stylesheets="@../../stylish/style.css">
                      <font>
-                        <Font name="Segoe UI" size="22.0" />
+                        <Font name="Segoe UI" size="20.0" />
                      </font>
                   </TextField>
-                  <TextField prefHeight="48.0" prefWidth="267.0" promptText="E-mail" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                  <TextField prefHeight="48.0" prefWidth="267.0" promptText="Όνομα Χρήστη" styleClass="input-field" stylesheets="@../../stylish/style.css">
                      <font>
-                        <Font name="Segoe UI" size="22.0" />
+                        <Font name="Segoe UI" size="20.0" />
                      </font>
                   </TextField>
-                  <PasswordField prefHeight="48.0" prefWidth="267.0" promptText="Password" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                  <PasswordField prefHeight="48.0" prefWidth="267.0" promptText="Κωδικός Πρόσβασης" styleClass="input-field" stylesheets="@../../stylish/style.css">
                      <font>
-                        <Font name="Segoe UI" size="22.0" />
+                        <Font name="Segoe UI" size="20.0" />
                      </font>
                   </PasswordField>
-                  <PasswordField prefHeight="48.0" prefWidth="267.0" promptText="Confirm Password" styleClass="input-field" stylesheets="@../../stylish/style.css">
+                  <PasswordField prefHeight="48.0" prefWidth="267.0" promptText="Επιβεβαίωση Κωδικού Πρόσβασης" styleClass="input-field" stylesheets="@../../stylish/style.css">
                      <font>
-                        <Font name="Segoe UI" size="22.0" />
+                        <Font name="Segoe UI" size="20.0" />
                      </font>
                   </PasswordField>
                </children>
@@ -55,7 +55,7 @@
                   <Insets bottom="20.0" top="-10.0" />
                </padding>
             </VBox>
-            <Button fx:id="login_btn" alignment="CENTER" mnemonicParsing="false" onAction="#onLogin" prefHeight="40.0" prefWidth="170.0" styleClass="submit-btn" stylesheets="@../../stylish/style.css" text="Sign up" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="NEVER">
+            <Button fx:id="login_btn" alignment="CENTER" mnemonicParsing="false" onAction="#onLogin" prefHeight="40.0" prefWidth="170.0" styleClass="submit-btn" stylesheets="@../../stylish/style.css" text="Εγγραφή" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="NEVER">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -67,6 +67,6 @@
       </VBox>
    </center>
    <bottom>
-      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="54.0" prefWidth="195.0" styleClass="sign-up-link" text="Go back to Login" textFill="#096afc" underline="true" wrapText="true" BorderPane.alignment="CENTER" />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="54.0" prefWidth="195.0" styleClass="sign-up-link" text="Σύνδεση" textFill="#096afc" underline="true" wrapText="true" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
