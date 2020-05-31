@@ -11,12 +11,14 @@ public class Citizen {
     private LocalDate memberSince;
 
     //Citizen Constructor
-    public Citizen(String firstName,String lastName,String email, String username,String password){
+    public Citizen(String firstName,String lastName,String email, String username,String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.username = username;
         this.password = password;
+        printInfoCitizen();
+        getNumOfInstances();
         this.memberSince = LocalDate.now();
     }
 
@@ -73,6 +75,13 @@ public class Citizen {
     public boolean checkIfOwner(/*Problem m*/){
         return true;
     }
+
+    public static int getNumOfInstances() {
+        counter++;
+        return counter;
+    }
+
+    private boolean checkOldPassword(String password)
 
     public void printInfoCitizen(){
         System.out.println("Firstname: " +this.firstName);
