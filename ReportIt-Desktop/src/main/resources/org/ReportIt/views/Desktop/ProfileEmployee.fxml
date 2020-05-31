@@ -177,7 +177,7 @@
             </Button>
          </children>
          <padding>
-            <Insets left="1600.0" />
+            <Insets left="1650.0" />
          </padding>
       </VBox>
    </bottom>

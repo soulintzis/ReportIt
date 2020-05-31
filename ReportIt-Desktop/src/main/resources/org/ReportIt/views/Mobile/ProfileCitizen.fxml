@@ -63,12 +63,12 @@
             <Insets />
          </BorderPane.margin>
          <padding>
-            <Insets left="130.0" />
+            <Insets left="220.0" />
          </padding>
       </VBox>
    </bottom>
    <center>
-      <VBox prefHeight="541.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="520.0" prefWidth="494.0" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="90.0" prefWidth="425.0">
                <children>
@@ -83,55 +83,34 @@
                   <Font name="System Italic" size="18.0" />
                </font>
             </Label>
-            <HBox prefHeight="333.0" prefWidth="425.0">
+            <HBox prefHeight="319.0" prefWidth="487.0">
                <children>
-                  <VBox prefHeight="353.0" prefWidth="175.0">
+                  <VBox prefHeight="279.0" prefWidth="477.0" spacing="20.0">
                      <children>
-                        <Label prefWidth="136.0" text="Ονοματεπώνυυμο:">
+                        <Label prefHeight="30.0" prefWidth="136.0" text="Ονοματεπώνυυμο">
                            <font>
                               <Font size="16.0" />
                            </font>
-                           <padding>
-                              <Insets top="20.0" />
-                           </padding>
                         </Label>
-                        <Label prefWidth="136.0" text="Email:">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="322.025390625">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Label prefWidth="136.0" text="Email">
                            <font>
                               <Font size="16.0" />
                            </font>
-                           <padding>
-                              <Insets top="20.0" />
-                           </padding>
                         </Label>
-                     </children>
-                     <padding>
-                        <Insets left="30.0" />
-                     </padding></VBox>
-                  <VBox prefHeight="353.0" prefWidth="237.0">
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="    Text" wrappingWidth="257.09375">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="322.025390625">
                            <font>
-                              <Font name="System Bold" size="16.0" />
+                              <Font name="System Bold" size="15.0" />
                            </font>
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="    Text" wrappingWidth="257.09375">
-                           <font>
-                              <Font name="System Bold" size="16.0" />
-                           </font>
-                           <VBox.margin>
-                              <Insets bottom="20.0" top="20.0" />
-                           </VBox.margin>
-                        </Text>
-                     </children>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin></VBox>
+                     </children></VBox>
                </children>
                <padding>
-                  <Insets top="10.0" />
+                  <Insets left="100.0" top="40.0" />
                </padding>
             </HBox>
          </children>
