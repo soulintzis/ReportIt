@@ -1,16 +1,20 @@
 package org.ReportIt;
 import java.util.ArrayList;
 
-public class ListOfCitizens extends Problem.Citizen {
-    public ListOfCitizens(String firstName, String lastName, String email, String username, String password) {
-        super(firstName, lastName, email, username, password);
+public class ListOfCitizens {
+    static ArrayList<Citizen> citizens = new ArrayList<Citizen>();
+
+    public static Citizen addCitizen(String firstName,String lastName,String email, String username,String password){
+        citizens.add(new Citizen(firstName, lastName, email, username, password));
+        System.out.println("Citizen added successfully");
+        int last_item_pos = citizens.size() - 1;
+        Citizen Citizen = citizens.get(last_item_pos);
+        return Citizen;
     }
 
-    public static void main(String[] args) {
-        ArrayList<Problem.Citizen> citizens = new ArrayList<Problem.Citizen>();
-        for(int i=0; i<=getNumOfInstances(); i++) {
-            //citizens.add(Citizen c);
-            System.out.println(citizens);
+    public static void printCitizens() {
+        for (Citizen str : citizens) {
+            str.printInfoCitizen();
         }
     }
 }
