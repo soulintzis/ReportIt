@@ -26,6 +26,9 @@
     -fx-border-width: 50px;
     -fx-background-color: #1D4F68;
 }
+.prelogin-btn:pressed{
+    fx-background-color: #23487c;
+}
 
 .jfx-hamburger StackPane {
     -fx-background-color: white;
@@ -86,9 +89,14 @@
 }
 
 .dropdown-field{
-    -fx-text-box-border: white;
-    -fx-background-radius: 23px;
-    /*-fx-border-width: 2px;*/
-    -fx-padding: 10;
+    -fx-background-color: #169BE1;
+
+    -fx-border-width: 23px;
+
     -fx-spacing: 8;
+    -fx-text-box-border: #169BE1 ;
 }
+
+
+
+
