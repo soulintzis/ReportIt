@@ -8,7 +8,6 @@ public class Vote {
 
     public Vote(boolean vote) {
         this.vote = vote;
-        getNumOfInstances();
     }
 
     public void setVote(boolean vote) {
@@ -17,11 +16,6 @@ public class Vote {
 
     public boolean getVote() {
         return vote;
-    }
-
-    public static int getNumOfInstances() {
-        counter++;
-        return counter;
     }
 
 //    ArrayList<Vote> votes_list = new ArrayList<Vote>();

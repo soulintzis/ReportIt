@@ -49,7 +49,7 @@ public class MenuController implements Initializable {
                                     loadFxml("Home");
                                     break;
                                 case "add":
-                                    //TODO: Add "Add Problem" page
+                                    loadFxml("AddProblem");
                                     break;
                                 case "map":
                                     loadFxml("MapView");
