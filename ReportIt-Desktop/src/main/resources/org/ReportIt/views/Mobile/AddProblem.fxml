@@ -14,13 +14,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="677.0" maxWidth="768.0" minHeight="677.0" minWidth="320.0" prefHeight="677.0" prefWidth="425.0" stylesheets="@../../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.Controllers.Mobile.AddProblemController">
+<AnchorPane maxHeight="677.0" maxWidth="768.0" minHeight="677.0" minWidth="320.0" prefHeight="677.0" prefWidth="425.0" stylesheets="@../../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.views.Mobile.AddProblem">
    <children>
-      <VBox alignment="TOP_CENTER" maxHeight="768.0" minWidth="320.0" prefHeight="50.0" prefWidth="425.0">
+      <VBox alignment="TOP_CENTER" maxHeight="768.0" minWidth="320.0" prefHeight="45.0" prefWidth="425.0">
          <children>
             <Text smooth="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Προσθήκη Προβλήματος" textAlignment="CENTER" wrappingWidth="424.4794921875" y="200.0">
                <font>
-                  <Font name="Segoe UI Bold" size="25.0" />
+                  <Font name="Arial Bold" size="25.0" />
                </font>
                <VBox.margin>
                   <Insets bottom="10.0" top="10.0" />
@@ -29,9 +29,9 @@
             <Line endX="324.29290771484375" endY="1.7928931713104248" startX="-100.0" />
          </children>
       </VBox>
-      <VBox layoutX="25.0" layoutY="54.0" prefHeight="412.0" prefWidth="375.0">
+      <VBox layoutX="25.0" layoutY="67.0" prefHeight="444.0" prefWidth="375.0">
          <children>
-            <VBox prefHeight="404.0" prefWidth="375.0" spacing="10.0">
+            <VBox prefHeight="421.0" prefWidth="375.0">
                <children>
                   <Label prefHeight="25.0" prefWidth="94.0" text=" Τοποθεσία">
                      <font>
@@ -39,7 +39,7 @@
                      </font>
                   </Label>
                   <TextField styleClass="input-field" />
-                  <HBox prefHeight="27.0" prefWidth="375.0">
+                  <HBox prefHeight="50.0" prefWidth="200.0">
                      <children>
                         <Button mnemonicParsing="false" styleClass="submit-btn" text="Αυτόματη Συμπλήρωση Τοποθεσίας " textFill="WHITE">
                            <cursor>
@@ -56,13 +56,13 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="combobox" editable="true" prefHeight="35.0" prefWidth="375.0" styleClass="dropdown-field" />
+                  <ComboBox editable="true" prefWidth="375.0" styleClass="dropdown-field" />
                   <Label prefHeight="25.0" prefWidth="206.0" text=" Βαθμός Επικινδυνότητας">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Label>
-                  <ComboBox editable="true" prefHeight="35.0" prefWidth="375.0" styleClass="dropdown-field" />
+                  <ComboBox editable="true" prefWidth="375.0" styleClass="dropdown-field" />
                   <Label prefHeight="25.0" prefWidth="177.0" text=" Περιγραφή">
                      <font>
                         <Font name="System Bold" size="15.0" />
@@ -70,16 +70,13 @@
                   </Label>
                   <TextArea prefHeight="116.0" prefWidth="375.0" />
                </children>
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
             </VBox>
          </children></VBox>
-      <VBox layoutX="25.0" layoutY="484.0" prefHeight="149.0" prefWidth="375.0">
+      <VBox layoutX="25.0" layoutY="470.0" prefHeight="149.0" prefWidth="375.0">
          <children>
             <Button mnemonicParsing="false" styleClass="submit-btn" text="Προσθήκη Φωτογραφίας" textFill="WHITE" />
          </children>
       </VBox>
-      <Button layoutX="144.0" layoutY="637.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" styleClass="submit-btn" text="Υποβολή" textFill="WHITE" />
+      <Button layoutX="136.0" layoutY="637.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" styleClass="submit-btn" text="Υποβολή" textFill="WHITE" />
    </children>
 </AnchorPane>

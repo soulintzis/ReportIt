@@ -9,7 +9,6 @@ public class Citizen {
     private String password;
     private String username;
     private LocalDate memberSince;
-    private static int counter=0;
 
     //Citizen Constructor
     public Citizen(String firstName,String lastName,String email, String username,String password) {
@@ -19,7 +18,6 @@ public class Citizen {
         this.username = username;
         this.password = password;
         printInfoCitizen();
-        getNumOfInstances();
         this.memberSince = LocalDate.now();
     }
 
@@ -77,12 +75,10 @@ public class Citizen {
         return true;
     }
 
-    public static int getNumOfInstances() {
-        counter++;
-        return counter;
-    }
 
-    //private boolean checkOldPassword(String password){}
+    private boolean checkOldPassword(String password){
+
+    }
 
     public void printInfoCitizen(){
         System.out.println("Firstname: " +this.firstName);
