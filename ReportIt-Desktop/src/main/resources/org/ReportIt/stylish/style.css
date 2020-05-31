@@ -68,3 +68,15 @@
     -fx-background-radius: 23px;
     -fx-text-fill: white;
 }
+
+.problem-info-card {
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-font-size: 15px;
+}
+
+.mobile-card {
+    -fx-background-color: linear-gradient(to top, #F8F8F8, #C8C8C8);
+    -fx-background-radius: 20px;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}

@@ -33,12 +33,12 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-//        launch(); 
         Problem problem1 = ListOfProblems.addProblem("Swmerset 103", "streetLight", "Medium", "Just another problem");
         Problem problem2 = ListOfProblems.addProblem("Swmerset 102", "streetLight", "Medium", "Just another problem");
+        launch();
 
-        ListOfProblems.deleteProblem(problem1);
-        ListOfProblems.printProblems();
+//        ListOfProblems.deleteProblem(problem1);
+//        ListOfProblems.printProblems();
     }
 
 

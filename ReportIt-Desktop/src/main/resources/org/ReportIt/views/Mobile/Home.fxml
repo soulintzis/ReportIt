@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
@@ -18,5 +20,14 @@
             <Line endX="176.2928924560547" startX="-100.0" />
          </children>
       </VBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutY="43.0" prefHeight="656.0" prefWidth="425.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <VBox fx:id="boxProblem" alignment="TOP_CENTER" fillWidth="false" minHeight="-Infinity" prefWidth="423.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

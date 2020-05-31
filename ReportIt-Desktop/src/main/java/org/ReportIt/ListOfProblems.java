@@ -64,4 +64,13 @@ public class ListOfProblems {
         System.out.println("Problem removed");
     }
 
+    public static int getListSize(){
+        return problems.size();
+    }
+
+    public static Problem getProblem(int index) {
+        Problem Problem = problems.get(index);
+        return Problem;
+    }
+
 }
