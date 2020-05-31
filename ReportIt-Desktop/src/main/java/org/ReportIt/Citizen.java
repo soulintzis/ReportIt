@@ -18,7 +18,6 @@ public class Citizen {
         this.username = username;
         this.password = password;
         printInfoCitizen();
-        getNumOfInstances();
         this.memberSince = LocalDate.now();
     }
 
@@ -76,12 +75,10 @@ public class Citizen {
         return true;
     }
 
-    public static int getNumOfInstances() {
-        counter++;
-        return counter;
-    }
 
-    private boolean checkOldPassword(String password)
+    private boolean checkOldPassword(String password){
+
+    }
 
     public void printInfoCitizen(){
         System.out.println("Firstname: " +this.firstName);

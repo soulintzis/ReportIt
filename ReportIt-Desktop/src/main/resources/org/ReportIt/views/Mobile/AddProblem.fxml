@@ -14,29 +14,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="750.0" maxWidth="768.0" minHeight="750.0" minWidth="320.0" prefHeight="750.0" prefWidth="425.0" stylesheets="@../../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.views.Mobile.AddProblem">
+<AnchorPane maxHeight="677.0" maxWidth="768.0" minHeight="677.0" minWidth="320.0" prefHeight="677.0" prefWidth="425.0" stylesheets="@../../stylish/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ReportIt.views.Mobile.AddProblem">
    <children>
-      <VBox alignment="TOP_CENTER" maxHeight="768.0" minWidth="320.0" prefHeight="160.0" prefWidth="425.0">
+      <VBox alignment="TOP_CENTER" maxHeight="768.0" minWidth="320.0" prefHeight="45.0" prefWidth="425.0">
          <children>
-            <HBox alignment="CENTER" maxHeight="100.0" maxWidth="425.0" minHeight="30.0" minWidth="280.0" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: #1D4F68;">
-               <children>
-                  <VBox alignment="CENTER_LEFT" maxWidth="768.0" minWidth="320.0" prefHeight="75.0" prefWidth="425.0">
-                     <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="137.0" style="-fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;" text="ReportIt" textAlignment="CENTER" textFill="WHITE">
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                        </Label>
-                        <Line endX="146.5" fill="WHITE" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
-                        <Label alignment="CENTER" prefHeight="26.0" prefWidth="154.0" style="fx-font-family: &quot;Sitka Banner&quot;; -fx-alignment: center;" text="For city's remedy" textFill="WHITE">
-                           <font>
-                              <Font size="17.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
             <Text smooth="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Προσθήκη Προβλήματος" textAlignment="CENTER" wrappingWidth="424.4794921875" y="200.0">
                <font>
                   <Font name="Arial Bold" size="25.0" />
@@ -48,7 +29,7 @@
             <Line endX="324.29290771484375" endY="1.7928931713104248" startX="-100.0" />
          </children>
       </VBox>
-      <VBox layoutX="25.0" layoutY="121.0" prefHeight="444.0" prefWidth="375.0">
+      <VBox layoutX="25.0" layoutY="67.0" prefHeight="444.0" prefWidth="375.0">
          <children>
             <VBox prefHeight="421.0" prefWidth="375.0">
                <children>
@@ -91,11 +72,11 @@
                </children>
             </VBox>
          </children></VBox>
-      <VBox layoutX="25.0" layoutY="541.0" prefHeight="149.0" prefWidth="375.0">
+      <VBox layoutX="25.0" layoutY="470.0" prefHeight="149.0" prefWidth="375.0">
          <children>
             <Button mnemonicParsing="false" styleClass="submit-btn" text="Προσθήκη Φωτογραφίας" textFill="WHITE" />
          </children>
       </VBox>
-      <Button layoutX="143.0" layoutY="699.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" styleClass="submit-btn" text="Υποβολή" textFill="WHITE" />
+      <Button layoutX="136.0" layoutY="637.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" styleClass="submit-btn" text="Υποβολή" textFill="WHITE" />
    </children>
 </AnchorPane>
