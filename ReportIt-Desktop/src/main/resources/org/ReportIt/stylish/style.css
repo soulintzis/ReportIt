@@ -90,13 +90,15 @@
 
 .dropdown-field{
     -fx-background-color: #169BE1;
-
     -fx-border-width: 23px;
-
     -fx-spacing: 8;
     -fx-text-box-border: #169BE1 ;
 }
 
+.textarea-field{
+    -fx-background-color: #169BE1;
+    -fx-text-box-border: #169BE1 ;
+}
 
 
 
