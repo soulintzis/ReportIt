@@ -3,17 +3,15 @@ package org.ReportIt;
 import java.time.LocalDate;
 
 public class Citizen {
-    private String firstName;
-    private String lastName;
+    private String fullName;
     private String email;
     private String password;
     private String username;
     private LocalDate memberSince;
 
     //Citizen Constructor
-    public Citizen(String firstName,String lastName,String email, String username,String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Citizen(String fullName,String email, String username,String password) {
+        this.fullName = fullName;
         this.email = email;
         this.username = username;
         this.password = password;
@@ -21,12 +19,8 @@ public class Citizen {
         this.memberSince = LocalDate.now();
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getFullName() {
+        return fullName;
     }
 
     public String getEmail() {
@@ -77,12 +71,11 @@ public class Citizen {
 
 
     private boolean checkOldPassword(String password){
-
+        return false;
     }
 
     public void printInfoCitizen(){
-        System.out.println("Firstname: " +this.firstName);
-        System.out.println("Lastname: " +this.lastName);
+        System.out.println("Fullname: " +this.fullName);
         System.out.println("Email: " +this.email);
         System.out.println("Password: " +this.password);
         System.out.println("Username: " +this.username);
