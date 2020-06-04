@@ -21,7 +21,7 @@ public class AddProblemController implements Initializable {
     );
 
     ObservableList<String> danger = FXCollections.observableArrayList(
-            "Φωτεινός σηματοδότης εκτός λειτουργίας","Πρόβλημα στο οδόστρωμα/πεζοδρόμιο","Διαρροή σωλήνα παροχής νερού","Άλλο"
+            "Χαμηλός","Μεσαίος","Υψηλός"
     );
 
 //    FXCollections.observableArrayList(week_days);
