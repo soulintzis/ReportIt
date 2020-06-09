@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class ListOfProblems {
     static ArrayList<Problem> problems = new ArrayList<Problem>();
 
-    public static Problem addProblem(String location, String type, String dangerDegr, String desc){
-        problems.add(new Problem(location, type, dangerDegr, desc));
+    public static Problem addProblem(String location, String type, String dangerDegr, String desc, Citizen citizen){
+        problems.add(new Problem(location, type, dangerDegr, desc, citizen));
         System.out.println("Problem added successfully");
         int last_item_pos = problems.size() - 1;
         Problem Problem = problems.get(last_item_pos);
@@ -14,8 +14,11 @@ public class ListOfProblems {
     }
 
     public static void printProblems(){
+        int counter = 0;
         for(Problem str: problems){
+            System.out.println("Problem - " + counter);
             str.printObj();
+            counter++;
         }
     }
 

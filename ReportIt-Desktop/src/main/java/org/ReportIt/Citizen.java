@@ -15,7 +15,6 @@ public class Citizen {
         this.email = email;
         this.username = username;
         this.password = password;
-        printInfoCitizen();
         this.memberSince = LocalDate.now();
     }
 
@@ -75,10 +74,13 @@ public class Citizen {
     }
 
     public void printInfoCitizen(){
+        System.out.println("----------------<<Citizen>>---------------");
         System.out.println("Fullname: " +this.fullName);
         System.out.println("Email: " +this.email);
         System.out.println("Password: " +this.password);
         System.out.println("Username: " +this.username);
+        System.out.println("---------------<Citizen End>--------------");
+
     }
 
 }

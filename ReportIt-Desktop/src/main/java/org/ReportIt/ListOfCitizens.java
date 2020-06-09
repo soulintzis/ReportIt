@@ -17,4 +17,15 @@ public class ListOfCitizens {
             str.printInfoCitizen();
         }
     }
+
+    public static Citizen login(String Username, String password) {
+        for (int i = 0; i < citizens.size(); i++) {
+            Citizen citizen = citizens.get(i);
+            if (citizen.getUsername().equals(Username) && citizen.getPassword().equals(password)) {
+                return citizen;
+            }
+        }
+        return null;
+    }
+
 }

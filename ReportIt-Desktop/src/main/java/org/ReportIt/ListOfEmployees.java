@@ -4,8 +4,8 @@ import java.util.ArrayList;
 public class ListOfEmployees{
     static ArrayList<Employee> employees = new ArrayList<Employee>();
 
-    public static Employee addEmployee(String password, String address, String phone, String email, String department, String role, String fullName, String username){
-        employees.add(new Employee(password, address, phone, email, department, role, fullName, username));
+    public static Employee addEmployee(String address, String phone, String email, String department, String role, String fullName, String username){
+        employees.add(new Employee(address, phone, email, department, role, fullName, username));
         System.out.println("Employee added successfully");
         int last_item_pos = employees.size() - 1;
         Employee Employee = employees.get(last_item_pos);
@@ -51,4 +51,15 @@ public class ListOfEmployees{
         }
         return index;
     }
+
+    public static Employee login(String Username, String password) {
+        for (int i = 0; i < employees.size(); i++) {
+            Employee emp = employees.get(i);
+            if (emp.getUsername().equals(Username) && emp.getPassword().equals(password)) {
+                return emp;
+            }
+        }
+        return null;
+    }
+
 }

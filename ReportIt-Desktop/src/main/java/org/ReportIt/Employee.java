@@ -16,7 +16,7 @@ public class Employee {
     private String username;
     private LocalDate employeeSince;
 
-    public Employee(String password, String address, String phone, String email, String department, String role, String fullName, String username) {
+    public Employee(String address, String phone, String email, String department, String role, String fullName, String username) {
         this.address = address;
         this.phone = phone;
         this.email = email;
@@ -74,7 +74,9 @@ public class Employee {
     static void addFields(String name , String surName){
 
     }
+
     public void printEmployeeInfo(){
+        System.out.println("----------------<<Employee>>---------------");
         System.out.println("Address: " + this.address);
         System.out.println("Phone: " + this.phone);
         System.out.println("Email: " + this.email);
@@ -83,5 +85,6 @@ public class Employee {
         System.out.println("Full name: " + this.fullName);
         System.out.println("Username:" + this.username);
         System.out.println("Password:" + this.password);
+        System.out.println("---------------<Employee End>--------------");
     }
 }
